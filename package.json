@@ -1,0 +1,17 @@
+{
+  "name": "xuechuang-finance-calculator",
+  "version": "0.1.0",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "description": "学创杯财务赛道非官方辅助测算工具，v0.1.0公开测试版",
+  "scripts": {
+    "test": "node --test tests/f01-r02.test.cjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

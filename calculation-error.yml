@@ -1,0 +1,70 @@
+name: 计算错误反馈
+description: 提供脱敏输入、阶段和双方结果，帮助复现计算差异。
+title: "[计算差异] "
+body:
+  - type: markdown
+    attributes:
+      value: "请先核对模板、实际出单、票据与现金阶段。不要上传账号、队伍信息、完整私人经营方案或未经允许传播的资料；优先提供最小合成复现。"
+  - type: input
+    id: version
+    attributes:
+      label: 版本号
+      placeholder: "例如 v0.1.0 公开测试版（见README/VERSION）"
+    validations:
+      required: true
+  - type: input
+    id: template
+    attributes:
+      label: 模板名称
+      placeholder: "积玉A/B、叠翠A/B、聚宝A/B、堆金A/B，或自录规则版"
+    validations:
+      required: true
+  - type: input
+    id: quarter_stage
+    attributes:
+      label: 季度及结算阶段
+      placeholder: "例如Q2交单前、Q3季初结算、Q4末付款后或Q5最终结算"
+    validations:
+      required: true
+  - type: input
+    id: financial_item
+    attributes:
+      label: 涉及的财务项目
+      placeholder: "例如营业成本、所得税、财务费用或季初现金"
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: 相关最小输入数据
+      description: "提供复现所需的建设、产量、订单/贴现/借款等脱敏字段；不要求公开整局JSON。"
+    validations:
+      required: true
+  - type: textarea
+    id: calculator_result
+    attributes:
+      label: 计算器结果
+      description: "注明金额单位和显示值；如有完整小数请一并说明。"
+    validations:
+      required: true
+  - type: textarea
+    id: platform_result
+    attributes:
+      label: 平台结果
+      description: "对应同一项目和同一结算阶段；如无平台结果请明确写尚未取得。"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 可复现步骤
+      description: "按实际点击顺序说明；注明浏览器和使用的HTML入口。"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私检查
+      options:
+        - label: "我已隐藏账号、队伍信息、私人经营方案及其他不应公开的资料。"
+          required: true
