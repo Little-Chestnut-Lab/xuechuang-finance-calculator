@@ -1,6 +1,6 @@
 # 学创杯财务赛道财务自动测算系统
 
-公开版权署名与英文品牌：**Little Chestnut Lab**。GitHub用户名：`little-chestnut-lab`。
+公开版权署名：Little Chestnut Lab
 
 **版本：v0.1.0 公开测试版｜面向学创杯财务赛道参赛者｜个人开发的非官方辅助工具**
 
